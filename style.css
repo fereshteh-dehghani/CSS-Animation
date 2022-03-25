@@ -1,10 +1,10 @@
 body{
     text-align: center;
 }
-.anime{
+/* .anime{
     transform:perspective(400px) rotateX(45deg) rotateY(45deg);
 
-}
+} */
 img{
     width: 200px;
     height: 300px;
@@ -13,9 +13,29 @@ img{
 main{
     width: 200px;
     height:300px;
-    display:flex;
+    /* display:flex; */
     align-items: center;
     margin: auto;
     /* background-color: orange;
     border: 1px solid black; */
 } 
+.circle{
+    width: 50px;
+    padding:50px 0;
+    background-color: pink;
+    margin: 30px;
+    /* border: 1px solid black; */
+    color: white;
+    border-radius: 50%;
+    display: inline-block;
+    padding:60px;
+    font-style:oblique;
+    font-weight:bolder;
+    transition: background-color 1s,transform 0.5s 0.7s ease-in;
+
+
+}
+.circle:hover{
+    background-color: salmon;
+    transform: rotate(360deg);
+}
