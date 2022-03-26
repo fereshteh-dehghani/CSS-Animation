@@ -1,0 +1,42 @@
+header{
+    padding: 10px 20px;
+    border-bottom: 1px solid #eee;
+    background: #fff;
+    height:15vh;
+}
+header:after{
+    display: block;
+    content: "";
+    clear: both;
+}
+.basket header h1{
+    float: left;
+}
+.basket header div{
+    float: right;
+    position: relative;
+    z-index: 1;
+    /* top: -80px; */
+}
+.basket header div img{
+    width: 100px;
+    height: 100px;
+
+}
+.basket ul{
+    padding:0;
+    margin-top: 40px;
+}
+.basket li{
+    width: 20%;
+    display: inline-block;
+    margin: 20px 1.5%;
+    list-style-type: none;
+    text-align: center;
+}
+.basket button{
+    border-radius: 10px;
+    color: gainsboro;
+    background:#222;
+    cursor: pointer;
+}
