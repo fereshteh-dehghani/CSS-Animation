@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,700&family=Roboto:ital,wght@1,100&family=Varela+Round&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-size:  'Roboto', sans-serif;
+}
+section{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    min-height: 100vh;
+    background: #350048;
+}
+section::before{
+    content:"";
+    position:absolute;
+    top: 45%;
+    width: 100%;
+    left:0;
+    height: 50px;
+background: #bd00ff;
+}
+.container{
+    width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.card{
+    position: relative;
+    width: 250px;
+    height: 300px;
+    text-align: center;
+    z-index: 10;
+    margin: 20px 20px 60px;
+}
+.box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.5) ;
+    backdrop-filter:blur(15px);
+    z-index: 10;
+    border: 1px solid rgba(255,255,255,0.1);
+    background:rgba(255,255,255,0.05);
+    border-radius: 10px;
+
+}
