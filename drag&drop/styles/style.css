@@ -1,0 +1,63 @@
+body{
+    
+    background-image: url('../images/bg1.jpg.jpg');
+
+    background-size: cover;
+
+}
+.container{
+display: flex;
+justify-content: space-around;
+align-items: center;
+flex-wrap: wrap;
+margin-top:13%;
+}
+.empty{
+
+    background-color:rgb(181, 202, 207);
+    border: 1px solid rgb(192, 20, 20);
+    width:300px;
+    height:300px;
+    position: relative;
+    margin:20px 0;
+    text-align: center;
+}
+
+.fill{
+    background-image: url('../images/bg3.webp');
+    position: relative;
+    width:290px;
+    height:290px;
+    top: 5px;
+    left: 5px;
+    cursor: pointer;
+}
+.empty span{
+    position:absolute;
+    top:20%;
+    left:42%;
+   
+       font-size: 85px;
+       color: #ff0745;
+       font-family: "Arial Black", Gadget, sans-serif;
+       text-shadow: 0px 0px 0 rgb(241,-7,55),
+                    -1px 0px 0 rgb(226,-22,40),
+                    -2px 0px 0 rgb(212,-36,26),
+                    -3px 0px 0 rgb(198,-50,12),
+                    -4px 0px 0 rgb(183,-65,0),
+                    -5px 0px 0 rgb(169,-79,0),
+                    -6px 0px  0 rgb(155,-93,0),
+                    -7px 0px 6px rgba(0,0,0,0.54),
+                    -7px 0px 1px rgba(0,0,0,0.5),
+                    0px 0px 6px rgba(0,0,0,.2);
+    }
+.hold{
+   border: 5px solid orangered; 
+}
+.hovered{
+    background:orchid;
+    border-style: dashed;
+}
+.invisible{
+    display: none;
+}
