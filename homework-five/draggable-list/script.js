@@ -57,6 +57,19 @@ function swapItems(fromIndex,toIndex){
 
 }
 
+function checkOrder(){
+listItems.forEach((listItem,index)=>{
+    const personName=listItem.querySelector('.draggable')
+    .innerText.trim();
+    if(personName !==richestPeople[index]){
+        listItem.classList.remove('wrong');
+        listItem.classList.add('right');
+
+    }
+})
+}
+
+
 
 /* drag functions */
 function dragStart(){
@@ -97,8 +110,7 @@ function dragDrop(){
             item.addEventListener('dragenter',dragEnter);
             item.addEventListener('dragleave',dragLeave);
         });
-      
-
-
       }
+
+      check.addEventListener('click',checkOrder);
  
