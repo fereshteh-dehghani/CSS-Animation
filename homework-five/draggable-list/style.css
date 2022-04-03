@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,400;1,700&family=Roboto:ital,wght@1,100&family=Varela+Round&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color:rgb(233, 194, 194);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-size: 'Lato', sans-serif;
+
+}
+.draggable-list{
+    border:1px solid rgb(43, 43, 63);
+    color:black;
+    padding: 0;
+    list-style-type: none;
+
+}
+.draggable-list li{
+    background-color: blanchedalmond;
+    display: flex;
+    flex:1;
+}
+.draggable-list li:not(last-of-type){
+    border-bottom:1px solid rgb(23, 65, 23);
+}
+.draggable-list .number{
+    background-color:#333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    font-size: 28px;
+
+}
+.draggable-list li.over .draggable{
+color: #eaeaea;
+}
+.draggable-list .person-name{
+    margin: 0 20px 0 0;
+}
+.draggable-list li.right .person-name{
+    color:#3ae374;
+}
+.draggable-list li.wrong .person-name{
+    color:#ff3838;
+}
+.draggable{
+    cursor:pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+     flex: 1;
+     padding: 15px;
+}
+.check-btn{
+    background-color: #444;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.check-btn:active{
+    transform: scale(0.98);
+}
+.check-btn:focus{
+    outline: none;
+}
