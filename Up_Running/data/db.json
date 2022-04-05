@@ -1,0 +1,31 @@
+{
+    "post":[
+        {
+            "id":1,
+            "title":"welcome to my blogs",
+            "body":"    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus, aliquid? Voluptatum aspernatur animi iure architecto, obcaecati perspiciatis qui doloribus atque modi dolor. Nisi laborum tempora voluptas, corporis quae nemo officia!",
+            "likes":30
+        },
+        {
+            "id":1,
+            "title":"How to be a net ninja",
+            "body":"    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus, aliquid? Voluptatum aspernatur animi iure architecto, obcaecati perspiciatis qui doloribus atque modi dolor. Nisi laborum tempora voluptas, corporis quae nemo officia!",
+            "likes":15
+        },
+        {
+            "id":3,
+            "title":"New Vue Cource Comming soon!",
+            "body":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus, aliquid? Voluptatum aspernatur animi iure architecto, obcaecati perspiciatis qui doloribus atque modi dolor. Nisi laborum tempora voluptas, corporis quae nemo officia!",
+            "likes":20
+        }
+    ],
+    "polls":[
+        {
+            "id":1,
+            "question":"do you prefer Vue or react",
+            "questionA":"Vue",
+            "questionB":"React"
+        }
+    ]
+
+}
