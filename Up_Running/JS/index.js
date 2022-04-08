@@ -18,4 +18,5 @@ posts.forEach(post=> {
     <a href="details.html">read more...</a>
     </div>`;
 });
+container.innerHTML=template;
 }
