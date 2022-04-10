@@ -6,18 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Css File -->
     <link rel="stylesheet" href="main.css">
+      <!-- font awesome -->
+      <!-- <script src="https://kit.fontawesome.com/c7db061f13.js" crossorigin="anonymous"></script> -->
+      <script src="https://kit.fontawesome.com/c7db061f13.js" crossorigin="anonymous"></script>
+   
+
     <title></title>
 </head>
 <body>
    <header>
-       <nav>
+       <nav id="navBar">
         <img src="images/logo1.jpg" alt="logo" class="logo">
         <ul class="nav-links">
-            <li><a href="#">Popular Places</a></li>
+            <li><a href="#" class="active">Popular Places</a></li>
             <li><a href="#">Travel Outside</a></li>
             <li><a href="#">Online Packeges</a></li>
         </ul>
         <a href="#" class="register-btn">Register Now</a>
+        <i class="fa-solid fa-bars" onclick="togglebtn()"></i>
        </nav>
        <section class="container">
 <h1>Find Your Next Stay</h1>
@@ -39,7 +45,7 @@
             <label for="">Guest</label>
             <input type="text" placeholder="Add Guest">
         </div>
-        <button type="submit"><img src="images/search2.png" alt="search"></button>
+        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
     </form>
 </section>
        </section>
@@ -196,7 +202,47 @@
          <h3>Sharing Is Earing Now</h3>
          <p>Lorem ipsum dolor, sit amet consectetur <br/>adipisicing elit. Aliquam repella</p>
          <a href="#" class="cta-btn">Know More</a>
-     </section>
+     </section><!--END OF cta-->
+     <h2 class="sub-title">Travellers Stories</h2>
+     <section class="stories">
+       <section>
+           <img src="images/travel1.webp" alt="traveller">
+           <p>Traveled more than 100 countries in less than a year</p>
+       </section>
+       <section>
+        <img src="images/travel1.webp" alt="traveller">
+        <p>Traveled more than 100 countries in less than a year</p>
     </section>
-</body>
+    <section>
+        <img src="images/travel1.webp" alt="traveller">
+        <p>Traveled more than 100 countries in less than a year</p>
+    </section>
+    </section> <!--End Of stories-->
+    <a href="#" class="start-btn"> Start Making Money</a>
+    <!-- About Massage -->
+    <section class="about-msg">
+        <h2>About Staybnb</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo ad ex
+             similique illum at, reiciendis deserunt. Doloribus accusantium placeat quos 
+             quasi assumenda enim impedit minus repellat neque? Sed, natus quaerat?</p>
+    </section>
+    </section>
+    
+ <footer>
+    <a href="facebook.com"><i class="fa-brands fa-facebook"></i></a>
+    <a href="youtube.com">  <i class="fa-brands fa-youtube"></i></a>
+    <a href="twitter.com"><i class="fa-brands fa-twitter"></i></a>
+    <a href="instagram"><i class="fa-brands fa-instagram-square"></i></a>
+    <a href="linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+    <hr>
+    <p>© By Fereshte</p>
+ </footer>
+ <!-- Scripts -->
+ <script>
+     const navBar=document.getElementById('navBar');
+     function togglebtn(){
+         navBar.classList.toggle('hidemenu');
+     }
+ </script>
+  </body>
 </html>

@@ -1,0 +1,40 @@
+
+$parimary:rgb(8, 146, 226);
+$info:rgb(82, 202, 82);
+$color:#444;
+$pink:rgb(230, 120, 138);
+$submition:rgb(10, 134, 118);
+
+@mixin flexCenter ($direction){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    flex-direction: $direction;
+}
+.btn-basic{
+    width: 10%;
+    height: 8%;
+    border-radius:7%;
+}
+body{
+    background-color: $info;
+    header{
+@include flexCenter(column);
+background-color: $pink;
+
+h1{
+    color:invert($parimary);
+}
+button{
+    @extend .btn-basic;
+background: $submition;
+color: $color;
+margin: 10px;
+display:block;
+&:hover{
+    background: red;
+}
+}
+    }
+}

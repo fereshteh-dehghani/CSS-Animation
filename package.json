@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "bootstrap-icons": "^1.8.1",
     "json-server": "^0.17.0"
   }
 }
