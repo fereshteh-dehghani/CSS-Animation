@@ -366,5 +366,396 @@ footer p{
     .about-msg{
         font-size: 15px;
     }
+    .list-container{
+        margin-top: 150px;
+    }
+    .left-col, .right-col ,.house .house-info{
+        flex-basis: 100%;
+    }
+    .left-col h4{
+        font-size: 22px;
+    }
+    .house-info h3{
+        font-size: 18px;
+    }
+    .house-info i{
+        font-size: 16px;
+    }
+    .pagination span{
+        margin: 10px 2px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 12px;
+    }
+/*  */
 
+}
+/* _____________________ LISTING PAGE_______________________*/
+.logo-red{
+    color: #ff5361;
+    font-size:45px;
+    text-shadow:5px 2px 3px #db2754 ;
+    position: absolute;
+    left: 3%;
+}
+.navbar-white{
+    background: #fff;
+    box-shadow:0 5px 10px rgba(0,0,0,0.5);
+}
+nav.navbar-white .nav-links li a{
+    color: #000;
+}
+.navbar-white .register-btn{
+    background: #ff5361;
+    color: #fff;
+    position: absolute;
+    right: 3%;
+}
+nav .fa-bars{
+    color: #000;
+}
+.navbar-white .active::after{
+    background: #ff5361;
+}
+/* ***********_________list-container_________***************** */
+.list-container{
+    /* width: 100%; */
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.left-col{
+    flex-basis:70%;
+    
+}
+.right-col{
+    flex-basis:25%;
+}
+.left-col h1{
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.house{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px 0;
+    border-top: 1px solid #ccc;
+}
+.house-img{
+    flex-basis: 40%;
+}
+.house-info{
+    flex-basis: 40%;
+}
+.house-img img{
+    width: 100%;
+    border-radius: 12px;
+}
+.house-info h3{
+    font-weight: 60;
+    color: #333;
+    font-size: 22px;
+}
+.house-info i{
+    color: #ff5361;
+    font-size: 18px;
+    margin: 10px 1px;
+}
+.house-price{
+    text-align: right;
+}
+.house-price h4{
+    font-size: 20px;
+}
+.house-price h4 span{
+    font-size:16px;
+    font-weight: 500px;
+
+}
+.sidebar{
+    border: 1px solid #999;
+    padding: 20px 30px;
+    margin-top: 30px;
+}
+.sidebar h2{
+    font-weight: 500;
+}
+.sidebar h3{
+    font-weight: 500;
+}
+.filter{
+    display: flex;
+    align-items: center;
+    color: #555;
+    margin-bottom: 10px;
+}
+.filter p{
+    flex: 1;
+}
+.filter input{
+    margin-right: 15px;
+    cursor: pointer;
+}
+.sidebar-link{
+    text-align: right;
+    margin: 20px 0;
+}
+.sidebar-link a{
+    text-decoration: none;
+}
+.pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+}
+.pagination i{
+    font-size: 22px;
+    margin: 10px 20px;
+    color: #555;
+}
+.pagination span{
+    margin: 10px 8px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    text-align: center;
+}
+.pagination .current{
+    background: #333;
+    color: #fff;
+}
+/* **********************_________________________******************** */
+/* @media only screen and (max-width:700px){
+    .list-container{
+        margin-top: 150px;
+    }
+    .left-col, .right-col ,.house .house-info{
+        flex-basis: 100%;
+    }
+    .left-col h4{
+        font-size: 22px;
+    }
+    .house-info h3{
+        font-size: 18px;
+    }
+    .house-info i{
+        font-size: 16px;
+    }
+    .pagination span{
+        margin: 10px 2px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 12px;
+    }
+} */
+
+/* *******__________House page Styles__________******** */
+.house-details{
+    padding: 0 12%;
+}
+.house-title{
+    margin-top: 50px;
+}
+.house-title h1{
+    font-weight: 600;
+}
+.house-title .row{
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+margin: 10px;
+}
+.house-title span{
+    margin: 0 20px;
+}
+.row i{
+    color:#ff5361;
+    font-size:14px;
+}
+.gallery{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas: 'first first . .' 'first first . .';
+    margin: 20px 0;
+}
+.gallery section img{
+    width: 100%;
+    display:block;
+    border-radius: 10px;
+
+}
+.gallery-img-1{
+    grid-area:first;
+}
+.small-details h2{
+    font-weight: 500;
+}
+.small-details h4{
+    text-align: right;
+    font-size: 22px;
+}
+.line{
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: #ccc;
+    max-width: 800px;
+    margin: 20px 0 50px;
+}
+.check-form{
+    margin: 30px 0;
+    background: #fff;
+    box-shadow: 0 0 30px rgba(0,0,0,0.3);
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+padding: 10px 50px;
+}
+.check-form label{
+    display: block;
+} 
+.check-form section{
+    padding: 20px;
+}
+.check-form input{
+    background: transparent;
+    border: 0;
+    outline: none;
+}
+.check-form button{
+    background: #ff5361;
+    border: 0;
+    outline: none;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 16px;
+    padding:10px;
+}
+.guest-field{
+    flex: 1;
+}
+.details-list{
+    list-style-type: none;
+    margin: 50px 0;
+}
+.details-list li{
+    margin-left: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #555;
+    margin-bottom: 20px;
+    position: relative;
+}
+.details-list li span{
+    display:block;
+    font-weight: 400;
+    font-size: 16px;
+}
+.details-list li i{
+    position: absolute;
+    left: -40px;
+}
+.home-desc{
+    max-width: 500px;
+    margin-bottom: 50px;
+}
+.map{
+    margin: 50px 0;
+}
+.map iframe{
+    width: 100%;
+    margin: 30px;
+}
+.map h3{
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.map b{
+    display: block;
+    margin-bottom: 16px;
+}
+.host{
+    display: flex;
+    align-items:center;
+}
+.host img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+.host h2{
+margin-bottom: 10px;
+font-weight: 500;
+}
+.host i{
+    color: #ff5361;
+}
+.contact-host{
+    display: inline-block;
+    margin: 40px 0 40px 120px;
+    text-decoration: none;
+    color: #555;
+    padding: 15px 50px;
+    border:1px solid #ff5361 ;
+    border-radius: 8px;
+}
+/* --------------------Media query--------------------- */
+@media only screen and (max-width:700px){
+    .house-details{
+        margin-top: 150px;
+    }
+    .row p{
+        margin-top: 10px;
+    }
+    .gallery{
+grid-template-areas: 'first first' '. .' '. .';
+    }
+    .small-details h2{
+        font-size: 20px;
+        margin-top: 24px;
+    }
+    .small-details h4{
+        text-align: left;
+        margin: 10px 0;
+        font-size: 18px;
+    }
+    .check-form{
+        padding:10px 30px;
+    }
+    .check-form section{
+        padding: 20px 0;
+        width: 100%;
+    }
+    .check-form input{
+        border-bottom: 1px solid #ccc;
+        width: 100%;
+        padding-bottom: 5px;
+    }
+    .check-form button{
+        font-size: 14px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        border-right: 4px;
+    }
+    .host{
+        display: block;
+        line-height: 28px;
+
+    }
+    .contact-host{
+        margin: 40px 0;
+    }
+   
 }

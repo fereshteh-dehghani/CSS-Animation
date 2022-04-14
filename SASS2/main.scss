@@ -1,17 +1,5 @@
 
-$parimary:rgb(8, 146, 226);
-$info:rgb(82, 202, 82);
-$color:#444;
-$pink:rgb(230, 120, 138);
-$submition:rgb(10, 134, 118);
-
-@mixin flexCenter ($direction){
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height:100vh;
-    flex-direction: $direction;
-}
+/*@extend*/
 .btn-basic{
     width: 10%;
     height: 8%;
@@ -38,3 +26,39 @@ display:block;
 }
     }
 }
+.button-basic  {
+    border: none;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .button-report  {
+    @extend .button-basic;
+    background-color: red;
+  }
+  
+  .button-submit  {
+    @extend .button-basic;
+    background-color: green;
+    color: white;
+  }
+//   @mixin
+@mixin important-text {
+    color: red;
+    font-size: 25px;
+    font-weight: bold;
+    border: 1px solid blue;
+  }
+  /*
+  selector {
+  @include mixin-name;
+}
+
+  */
+  @mixin special-text {
+    @include important-text;
+    @include link;
+    @include special-border;
+  }
