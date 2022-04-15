@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Css File -->
+    <link rel="stylesheet" href="form.css">
+    <!-- Font Awesome link -->
+    <script src="https://kit.fontawesome.com/c7db061f13.js" crossorigin="anonymous"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <section class="container">
+     
+        <form action="Post">
+            <!-- Icon paper -->
+            <i class="fa-solid fa-paper-plane"></i>
+            <section class="input-group">
+                <label>Full Name</label>
+                <input type="text" placeholder="Enter Your Name" id="contact-name" onkeyup="validateName()">
+                <span id="name-error"></span>
+            </section>
+            <section class="input-group">
+                <label>Phone NO.</label>
+                <input type="tel" placeholder="123 4567 890" id="contact-phone" onkeyup="validatePhone()">
+                <span id="phone-error"></span>
+
+            </section>
+            <section class="input-group">
+                <label>Email Id</label>
+                <input type="email" placeholder="Enter Email" id="contact-email" onkeyup="validateEmail()">
+                <span id="email-error"></span>
+
+            </section>
+            <section class="input-group">
+                <label>Your Message</label>
+                <textarea rows="5" placeholder="Enter You Message" id="contact-message" onkeyup="validateMessage()"></textarea>
+                <span id="message-error"></span>
+
+            </section>
+            <button type="submit" onclick="return validateForm()">Submit</button>
+            <span id="submit-error"></span>
+
+        </form>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
