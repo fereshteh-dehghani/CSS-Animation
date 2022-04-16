@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+img{
+  
+    margin: auto;
+    position: absolute;
+    transform: translate(50%,50%);
+    top:50%;
+    border-radius: 50%;
+    border: none;
+}
+.dark-mode{
+    background:#111;
+    color: #fff;
+}
+/* img:hover{
+    background:rgb(126, 189, 214);
+    border-radius: 50%;
+    background-size: cover;
+    padding:6px;
+} */
+/* .light-mode{
+    display: none;
+} */
