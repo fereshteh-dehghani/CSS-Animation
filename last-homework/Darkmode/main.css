@@ -3,12 +3,23 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root{
+    --fisrt-color:rgb(241, 216, 216);
+    --secondary-color:#111;
+}
+.dark-them{
+    --fisrt-color:#111;
+    --secondary-color:rgb(209, 181, 181);
+}
+
 body{
     width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
     justify-items: center;
+    background: var(--fisrt-color);
+    color: var(--secondary-color);
 }
 img{
   
